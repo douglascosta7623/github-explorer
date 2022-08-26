@@ -11,8 +11,12 @@ export function Counter(){
 
   function decrement(){
     counter <= 0 ? counter=0 : setCounter(counter -= 1);
-    
-  }
+      }
+
+
+      function reset(){
+       setCounter(counter = 0);
+          }
   return (
     <div>
       <h2>
@@ -21,6 +25,8 @@ export function Counter(){
       <button type="button" onClick={count}>Increment</button>
 
       <button type="button" onClick={decrement}>Decrement</button>
+
+      <button type="button" onClick={reset}>Reset</button>
     </div>
   )
 }
