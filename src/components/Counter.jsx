@@ -1,5 +1,10 @@
 import { useState } from "react";
+//imutabilidade - criar um novo espaço na memoria com o temos e adicionamos a nova informação. ao inves de mudar a variavel que já temos
+//users = ['user', 'user1', 'user2']
+//users.push('user3') -> Estou mudando a memoria da variavel
+// com states (imutabilidade)
 
+// newUsers = [...users, 'newUser']
 //se tem use = hook -> gancho
 export function Counter(){
   let [counter, setCounter] = useState(0);
@@ -30,3 +35,5 @@ export function Counter(){
     </div>
   )
 }
+
+// quando rodo a aplicação no webpack server ao salvar o código com novas informações. A aplicação no servidor é reiniciada. Solução contorno REACT FAST REFRESH
