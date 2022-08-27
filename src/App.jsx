@@ -8,9 +8,12 @@ export function App(){
 
   return (
   <>
-  <h1>Hello World! Douglas Server</h1>
+  <section className='container'>
+  <h1 className='title-main'>Primeiro Projeto em React</h1>
+
+  <p className='description-project'>Utilizando a api do GitHub, o projeto permite listar os repositórios do usuário passado com parametro (Exemplo: douglascosta7623).</p>
   <RepositoryList/>
-  <Counter/>
+  </section>
   </>
   )
 

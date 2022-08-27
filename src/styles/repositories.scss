@@ -1,0 +1,47 @@
+section.repository-list {
+  margin-top: 40px;
+  h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  ul {
+    list-style: none;
+
+    li {
+      background: #241641;
+      height: 104px;
+      padding: 20px 10px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 100%;
+      color: #bdbdbd;
+      &:nth-of-type(even) {
+        background-color: #3c1f7b;
+        color: #fff;
+      }
+      &:not(:last-child) {
+        margin-bottom: 8px;
+
+        border-radius: 6px;
+      }
+      strong {
+        display: inline-block;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        width: 100%;
+        border-bottom: 1px solid #c68aff;
+        padding-bottom: 0.8rem;
+        margin-bottom: 8px;
+      }
+      p {
+      }
+      a {
+        display: inline-block;
+        margin-top: 1.6rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
